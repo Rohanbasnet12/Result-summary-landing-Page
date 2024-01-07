@@ -1,0 +1,123 @@
+/* LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* FONTS */
+    --P-FSIZE: 18px;
+    --PRIMARY-FONT: 'Hanken Grotesk', sans-serif;
+    --FONT-WEIGHT1: 500;
+    --FONT-WEIGHT2: 700;
+    --FONT-WEIGHT3: 800;
+
+    /* GRADIENTS */
+    --SLATEBLUE-COLOR: hsl(252, 100%, 67%);
+    --ROYALBLUE-COLOR: hsl(241, 81%, 54%);
+    --VIOLETBLUE-COLOR: hsla(256, 72%, 46%, 1);
+    --PERSIANBLUE-COLOR: hsla(241, 72%, 46%, 0);
+
+    /* COLORS */
+    --WHITE-COLOR: hsl(0, 0%, 100%);
+    --PALEBLUE-COLOR: hsl(221, 100%, 96%);
+    --LIGHTLAVENDER-COLOR: hsl(241, 100%, 89%);
+    --DARKGRAYBLUE-COLOR: hsl(224, 30%, 27%);
+}
+
+/* CSS UTILS */
+.gray {
+    color: rgba(255, 255, 255, 0.638);
+}
+
+.gray-200 {
+    color: rgb(169, 169, 169);
+}
+
+.view {
+    width: 100%;
+    height: 40px;
+    border-radius: .5em;
+    box-shadow: .2em .2em .5em #fffffff0;
+}
+
+/* GENERAL STYLING */
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: var(--PRIMARY-FONT);
+}
+
+/* STYLING MAIN SECTION */
+#main {
+    width: 100%;
+    height: 100vh;
+    background: var(--WHITE-COLOR);
+}
+
+
+/* STYLING LEFT CONTAINER */
+#left-container {
+    background: linear-gradient(to bottom, var(--SLATEBLUE-COLOR), var(--ROYALBLUE-COLOR));
+}
+
+/* STYLING BOX1 */
+.box1 {
+    color: white;
+    font-weight: var(--FONT-WEIGHT1);
+}
+
+/* STYLING BOX2 */
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-bg {
+    background: radial-gradient(circle, var(--PERSIANBLUE-COLOR), var(--VIOLETBLUE-COLOR));
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_parah {
+    font-size: 4rem;
+    font-weight: var(--FONT-WEIGHT2);
+    line-height: .8;
+}
+
+/* STYLING RIGHT CONTAINER */
+
+.inner_container {
+    width: 100%;
+    height: 100%;
+}
+
+.inner_container p {
+    font-weight: var(--FONT-WEIGHT2);
+}
+
+.right p {
+    color: var(--DARKGRAYBLUE-COLOR);
+}
+
+.btn {
+    background: var(--DARKGRAYBLUE-COLOR);
+    transition: all .3s ease-out;
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: var(--FONT-WEIGHT2);
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, var(--SLATEBLUE-COLOR), var(--ROYALBLUE-COLOR));
+}
